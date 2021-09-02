@@ -18,11 +18,5 @@ pipeline {
             }
         }
     }
-    post
-    {
-        always
-        {
-            emailext body: 'Summary', subject: 'Pipeline Status',to:'2019rohan.padhye@ves.ac.in'
-        }
-    }
+
 }
